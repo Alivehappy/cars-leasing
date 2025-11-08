@@ -387,7 +387,9 @@ body {
 .choose {
   padding: 100px 0 150px;
 }
-
+.tabs {
+  margin-bottom: 7px;
+}
 .tabs__btn {
   padding: 0 150px;
   display: flex;
@@ -408,9 +410,12 @@ body {
 }
 
 .tabs__content-item {
-  display: grid;
+  display: none;
   grid-template-columns: repeat(4, 1fr);
   gap: 100px 40px;
+}
+.tabs__content-item.tabs__btn-item--active {
+  display: grid;
 }
 .card {
   text-align: center;
